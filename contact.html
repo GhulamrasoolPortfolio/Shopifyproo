@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact ShopifyPro Agency — Get a free consultation for your Shopify project." />
+  <title>Contact — ShopifyPro Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .faq-item{border:1px solid var(--border);border-radius:14px;margin-bottom:1rem;overflow:hidden;transition:all var(--transition)}
+    .faq-item:hover{border-color:var(--primary)}
+    .faq-q{padding:1.2rem 1.5rem;font-weight:700;color:var(--text);cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--card-bg);user-select:none;font-family:var(--font-display);font-size:0.95rem}
+    .faq-q span{font-size:1.2rem;transition:transform var(--transition);color:var(--primary)}
+    .faq-item.open .faq-q span{transform:rotate(45deg)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s;padding:0 1.5rem;color:var(--text-muted);font-size:0.92rem;line-height:1.75;background:var(--card-bg)}
+    .faq-item.open .faq-a{max-height:200px;padding:0 1.5rem 1.2rem}
+    .availability-badge{display:inline-flex;align-items:center;gap:8px;background:#dcfce7;color:#16a34a;border:1px solid #bbf7d0;padding:7px 16px;border-radius:50px;font-size:0.82rem;font-weight:700;margin-bottom:2rem}
+    .avail-dot{width:7px;height:7px;border-radius:50%;background:#16a34a;animation:pulse 2s ease infinite}
+    .contact-cta-card{background:var(--gradient);border-radius:20px;padding:2.5rem;color:white;margin-top:2.5rem}
+    .contact-cta-card h3{font-family:var(--font-display);font-size:1.4rem;font-weight:900;margin-bottom:0.5rem;letter-spacing:-0.02em}
+    .contact-cta-card p{opacity:0.9;margin-bottom:1.5rem;font-size:0.94rem;line-height:1.7}
+  </style>
+</head>
+<body class="scheme-1">
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">ShopifyPro</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="inner-hero">
+  <div class="hero-bg"><div class="hero-blob hero-blob-1" style="opacity:0.15"></div><div class="hero-blob hero-blob-2" style="opacity:0.15"></div></div>
+  <div style="position:relative;z-index:1">
+    <span class="section-tag reveal">Let's Talk</span>
+    <h1 class="section-title reveal" style="font-size:clamp(2.5rem,5vw,4rem)">Start Your <span>Shopify</span> Journey Today</h1>
+    <p class="section-subtitle reveal">Tell us about your project and we'll get back to you within 24 hours with a customized proposal — completely free.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="contact-grid">
+    <!-- INFO LEFT -->
+    <div class="reveal-left">
+      <div class="availability-badge"><div class="avail-dot"></div>Currently Accepting New Projects</div>
+      <h2 class="section-title" style="font-size:2rem">Get a Free<br><span>Consultation</span></h2>
+      <p style="color:var(--text-muted);line-height:1.8;margin-top:1rem;margin-bottom:2.5rem;font-size:0.95rem">Whether you're launching a brand new store or rebuilding an existing one — we'd love to hear about your vision. Our consultations are zero-pressure, deeply strategic conversations.</p>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div><h4>Email Us</h4><p><a href="mailto:hello@shopifypro.agency" style="color:var(--primary)">hello@shopifypro.agency</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div><h4>WhatsApp / Phone</h4><p><a href="tel:+923001234567" style="color:var(--primary)">+92 300 1234567</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div><h4>Office Location</h4><p>DHA Phase 5, Lahore, Punjab, Pakistan</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">⏱️</div>
+          <div><h4>Response Time</h4><p>Within 24 hours (usually much faster)</p></div>
+        </div>
+      </div>
+      <div class="contact-cta-card">
+        <h3>Prefer to Chat?</h3>
+        <p>Join 150+ merchants who grew their stores with us. Book a 30-minute video call on Calendly — no commitments.</p>
+        <a href="#" class="btn-white" style="font-size:0.88rem;padding:11px 26px">Schedule a Call</a>
+      </div>
+    </div>
+
+    <!-- FORM RIGHT -->
+    <div class="reveal-right">
+      <div class="contact-form">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:900;color:var(--text);margin-bottom:2rem;letter-spacing:-0.02em">Tell Us About Your Project</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group"><label for="fname">First Name</label><input type="text" id="fname" placeholder="Your first name" required /></div>
+            <div class="form-group"><label for="lname">Last Name</label><input type="text" id="lname" placeholder="Your last name" required /></div>
+          </div>
+          <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" placeholder="you@company.com" required /></div>
+          <div class="form-row">
+            <div class="form-group"><label for="phone">Phone / WhatsApp</label><input type="tel" id="phone" placeholder="+1 234 567 8900" /></div>
+            <div class="form-group"><label for="budget">Budget Range</label>
+              <select id="budget">
+                <option value="">Select budget</option>
+                <option>Under $500</option>
+                <option>$500 – $1,500</option>
+                <option>$1,500 – $5,000</option>
+                <option>$5,000 – $15,000</option>
+                <option>$15,000+</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group"><label for="service">Service Required</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option>Shopify Store Setup</option>
+              <option>Custom Theme Development</option>
+              <option>Shopify App Development</option>
+              <option>App Integration &amp; Plugins</option>
+              <option>Speed Optimization</option>
+              <option>Conversion Rate Optimization</option>
+              <option>Shopify Migration</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="storeurl">Current Store URL (if existing)</label><input type="url" id="storeurl" placeholder="https://yourstore.com" /></div>
+          <div class="form-group"><label for="message">Project Details</label><textarea id="message" placeholder="Tell us about your store, your goals, and what you need help with..." required></textarea></div>
+          <button type="submit" class="btn-primary form-submit ripple">Send Message — It's Free</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div style="margin-top:6rem">
+    <div class="text-center" style="margin-bottom:3rem">
+      <span class="section-tag reveal">FAQ</span>
+      <h2 class="section-title reveal">Common <span>Questions</span></h2>
+    </div>
+    <div style="max-width:750px;margin:0 auto">
+      <div class="faq-item reveal"><div class="faq-q">How long does a typical Shopify store take to build? <span>+</span></div><div class="faq-a">A full custom store typically takes 3–6 weeks depending on complexity. A simpler setup can be done in 1–2 weeks. We always provide a clear timeline before starting.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">Do you offer post-launch support? <span>+</span></div><div class="faq-a">All projects include 30 days of free post-launch support. We also offer ongoing monthly maintenance and optimization retainers.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">Can you work with clients outside Pakistan? <span>+</span></div><div class="faq-a">Yes — 80% of our clients are international. We work across all time zones using tools like Slack, Notion, and Loom for seamless collaboration.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">Do you require full payment upfront? <span>+</span></div><div class="faq-a">No. We work on a milestone-based payment structure — typically 30% to start, 40% at design approval, and 30% at launch. We accept PayPal, Stripe, and bank transfer.</div></div>
+      <div class="faq-item reveal"><div class="faq-q">What makes ShopifyPro different from other agencies? <span>+</span></div><div class="faq-a">We're 100% Shopify-focused — no WordPress, no distractions. Every person on our team is a Shopify specialist. We also guarantee results: if your store doesn't hit agreed KPIs, we work for free until it does.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">ShopifyPro</a>
+      <p>Pakistan's premier Shopify agency. We build stores that sell, apps that scale, and brands that endure.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Store Setup</a></li>
+        <li><a href="services.html">Theme Development</a></li>
+        <li><a href="services.html">App Development</a></li>
+        <li><a href="services.html">CRO</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@shopifypro.agency">hello@shopifypro.agency</a></li>
+        <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+        <li>Lahore, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopifyPro Agency. All rights reserved.</p>
+    <p>Built with love for Shopify merchants worldwide.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+</body>
+</html>

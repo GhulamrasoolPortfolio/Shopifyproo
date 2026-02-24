@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShopifyPro Agency Portfolio — Premium Shopify projects showcasing our development expertise." />
+  <title>Portfolio — ShopifyPro Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .filter-bar{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:3rem 0 1rem}
+    .filter-btn{background:transparent;border:2px solid var(--border);color:var(--text-muted);padding:8px 22px;border-radius:50px;font-size:0.88rem;font-weight:700;cursor:pointer;transition:all var(--transition);font-family:var(--font-body)}
+    .filter-btn:hover,.filter-btn.active{background:var(--gradient);color:white;border-color:transparent;box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+    .portfolio-stats{display:flex;gap:4rem;justify-content:center;background:var(--gradient-soft);border:1px solid var(--border);border-radius:22px;padding:3rem;margin:0 0 3rem;flex-wrap:wrap}
+    .portfolio-stat{text-align:center}
+    .portfolio-stat-num{font-family:var(--font-display);font-size:3rem;font-weight:900;letter-spacing:-0.03em;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .portfolio-stat-label{color:var(--text-muted);font-size:0.88rem;font-weight:600;margin-top:4px}
+  </style>
+</head>
+<body class="scheme-1">
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">ShopifyPro</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="inner-hero">
+  <div class="hero-bg"><div class="hero-blob hero-blob-1" style="opacity:0.18"></div><div class="hero-blob hero-blob-2" style="opacity:0.18"></div></div>
+  <div style="position:relative;z-index:1">
+    <span class="section-tag reveal">Our Work</span>
+    <h1 class="section-title reveal" style="font-size:clamp(2.5rem,5vw,4rem)">Projects That <span>Deliver</span></h1>
+    <p class="section-subtitle reveal">Every project in our portfolio represents a partnership built on trust, creativity, and measurable results. Click any card to explore the full story.</p>
+  </div>
+</section>
+
+<section style="padding-top:0">
+
+  <!-- STATS -->
+  <div class="portfolio-stats reveal">
+    <div class="portfolio-stat"><div class="portfolio-stat-num"><span class="counter" data-target="150" data-suffix="+">0+</span></div><div class="portfolio-stat-label">Projects Delivered</div></div>
+    <div class="portfolio-stat"><div class="portfolio-stat-num"><span class="counter" data-target="40" data-suffix="+">0+</span></div><div class="portfolio-stat-label">Countries</div></div>
+    <div class="portfolio-stat"><div class="portfolio-stat-num">$<span class="counter" data-target="12" data-suffix="M+">0M+</span></div><div class="portfolio-stat-label">Revenue Generated</div></div>
+    <div class="portfolio-stat"><div class="portfolio-stat-num"><span class="counter" data-target="98" data-suffix="%">0%</span></div><div class="portfolio-stat-label">Client Retention</div></div>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Projects</button>
+    <button class="filter-btn" data-filter="theme">Theme Dev</button>
+    <button class="filter-btn" data-filter="app">App Dev</button>
+    <button class="filter-btn" data-filter="migration">Migration</button>
+    <button class="filter-btn" data-filter="cro">CRO</button>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="portfolio-grid stagger" style="margin-top:2rem">
+
+    <div class="project-card reveal" data-category="theme"
+      data-modal="1" data-title="GlowBeauty — Luxury Cosmetics Store"
+      data-desc="A premium beauty brand store with custom animations and 3D product viewer."
+      data-fulldesc="GlowBeauty needed a storefront that matched their luxury positioning. We built a fully custom Shopify 2.0 theme featuring parallax scrolling, full-width editorial sections, custom shade swatches, and a 3D product rotation viewer. Result: 142% increase in conversion rate and load time improved from 3.8s to 1.1s."
+      data-tech="Shopify Liquid, CSS3 Animations, Three.js, WebP Optimization">
+      <div class="project-img"><div class="project-img-placeholder">💄</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>GlowBeauty Cosmetics</h3><p>Luxury beauty store with 3D product viewer and editorial design for a premium UK brand.</p><div class="tech-stack"><span class="tech-tag">Custom Theme</span><span class="tech-tag">Liquid</span><span class="tech-tag">Three.js</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="app"
+      data-modal="2" data-title="NutriFit — Subscription App"
+      data-desc="Custom subscription billing app with smart pause/skip and personalized plans."
+      data-fulldesc="NutriFit's business model required a custom subscription system that Shopify's native offering couldn't support. We built a fully custom subscription app with variable billing intervals, customer-facing subscription management portal, smart skip/pause/swap logic, and automated dunning management. The app now powers 8,000+ active subscriptions generating over $2M ARR."
+      data-tech="Node.js, React, Shopify API, Stripe, Polaris UI, GraphQL">
+      <div class="project-img"><div class="project-img-placeholder">🥗</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>NutriFit Subscriptions</h3><p>Custom subscription billing app powering 8,000+ active subscribers for a health brand.</p><div class="tech-stack"><span class="tech-tag">App Dev</span><span class="tech-tag">Node.js</span><span class="tech-tag">Stripe</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="migration"
+      data-modal="3" data-title="CasaDecor — WooCommerce to Shopify"
+      data-desc="Full migration of 4,200 SKUs with complete SEO preservation and zero downtime."
+      data-fulldesc="CasaDecor had 4,200 products, 15 years of customer data, and 8,000 blog posts to migrate from WooCommerce. We executed a complete data migration including all product metafields, variant data, customer records, order history, and media assets. Every URL was mapped and redirected. The new Shopify store launched with zero downtime, 100% data integrity, and a 45% faster load time."
+      data-tech="Shopify Liquid, Python, CSV Processing, Redirect Mapping">
+      <div class="project-img"><div class="project-img-placeholder">🏠</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>CasaDecor Home Store</h3><p>WooCommerce to Shopify migration — 4,200 SKUs, full SEO preservation, zero downtime.</p><div class="tech-stack"><span class="tech-tag">Migration</span><span class="tech-tag">SEO</span><span class="tech-tag">Python</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="cro"
+      data-modal="4" data-title="TechGear — CRO &amp; Speed Overhaul"
+      data-desc="Complete CRO audit and implementation resulting in 68% conversion lift in 45 days."
+      data-fulldesc="TechGear was driving significant paid traffic but suffering from a 0.8% conversion rate. After full UX audit using Hotjar heatmaps and session recordings, we identified unclear product hierarchy, slow load times, poor mobile checkout, and missing trust signals. After full redesign and speed overhaul from PageSpeed 62 to 91 — conversion rate jumped to 2.7% in 45 days."
+      data-tech="Shopify Theme, Google Optimize, Hotjar, WebP, Lighthouse CI">
+      <div class="project-img"><div class="project-img-placeholder">💻</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>TechGear Electronics</h3><p>CRO audit and overhaul — conversion rate jumped from 0.8% to 2.7% in 45 days.</p><div class="tech-stack"><span class="tech-tag">CRO</span><span class="tech-tag">Speed Opt</span><span class="tech-tag">UX</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="theme"
+      data-modal="5" data-title="SportZone — Athletic Brand Store"
+      data-desc="Bold, high-energy Shopify theme for a sports apparel brand with live inventory."
+      data-fulldesc="SportZone needed a store that matched their brand's energy — fast, bold, powerful. We created a fully custom theme featuring full-width video hero, countdown timers, live inventory badges, and an advanced product filtering system. The store includes custom sizing guides, a Complete the Look feature, and mega menus with category images. Revenue grew 180% within the first quarter post-launch."
+      data-tech="Shopify Liquid, GSAP Animations, Custom Metafields, Ajax Cart">
+      <div class="project-img"><div class="project-img-placeholder">👟</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>SportZone Apparel</h3><p>High-energy athletic store with video hero, GSAP animations, and live inventory features.</p><div class="tech-stack"><span class="tech-tag">Custom Theme</span><span class="tech-tag">GSAP</span><span class="tech-tag">Metafields</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="app"
+      data-modal="6" data-title="FoodieBox — B2B Wholesale App"
+      data-desc="Custom B2B pricing and ordering app with tiered pricing and bulk order management."
+      data-fulldesc="FoodieBox serves both B2C retail and B2B wholesale customers — requiring completely different pricing logic, minimum order quantities, and payment terms. We built a custom B2B app that presents tiered wholesale pricing based on customer tags, enforces MOQ rules, enables bulk CSV order uploads, and integrates with their ERP for invoice management. The app reduced manual order processing time by 80%."
+      data-tech="Shopify Admin API, React, Node.js, PostgreSQL, REST API">
+      <div class="project-img"><div class="project-img-placeholder">🍱</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>FoodieBox Wholesale</h3><p>B2B wholesale app with tiered pricing, MOQ rules, and ERP integration.</p><div class="tech-stack"><span class="tech-tag">App Dev</span><span class="tech-tag">B2B</span><span class="tech-tag">PostgreSQL</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="migration"
+      data-modal="7" data-title="LuxeWatches — Magento to Shopify Plus"
+      data-desc="Enterprise-grade migration of luxury watch brand from Magento 2 to Shopify Plus."
+      data-fulldesc="LuxeWatches was running on Magento 2 with complex custom modules, multi-currency, and 3 regional storefronts. We executed a full Shopify Plus migration — all 1,800 products with custom attributes, 50,000+ customer records, and 200,000+ order history. We rebuilt all custom functionality as native Shopify features, reducing infrastructure cost by 65%."
+      data-tech="Shopify Plus, Liquid, Multi-currency, Shopify Markets, Custom Apps">
+      <div class="project-img"><div class="project-img-placeholder">⌚</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>LuxeWatches Migration</h3><p>Enterprise Magento 2 to Shopify Plus — 3 storefronts, 50K customers, 200K orders.</p><div class="tech-stack"><span class="tech-tag">Shopify Plus</span><span class="tech-tag">Migration</span><span class="tech-tag">Markets</span></div></div>
+    </div>
+
+    <div class="project-card reveal" data-category="theme"
+      data-modal="8" data-title="OrganicLeaf — Sustainable Brand Store"
+      data-desc="Earth-toned, animation-rich Shopify store for a sustainable organic food brand."
+      data-fulldesc="OrganicLeaf required a store that communicated trust, sustainability, and freshness. We built a fully custom theme with earthy green tones, hand-illustrated SVG animations, scroll-triggered ingredient reveals, and an educational brand story section. The store features a custom bundle builder, loyalty rewards integration, and a farm-to-table storytelling section that reduces bounce rate by 38%."
+      data-tech="Shopify Liquid, SVG Animations, Custom Bundle Builder, Loyalty API">
+      <div class="project-img"><div class="project-img-placeholder">🌿</div><div class="project-overlay"><span class="overlay-btn">View Project</span></div></div>
+      <div class="project-info"><h3>OrganicLeaf Brand Store</h3><p>Sustainable food brand with SVG animations, bundle builder, and storytelling sections.</p><div class="tech-stack"><span class="tech-tag">Custom Theme</span><span class="tech-tag">SVG Animations</span><span class="tech-tag">Bundle Builder</span></div></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-title"></h2>
+      <button class="modal-close" aria-label="Close">✕</button>
+    </div>
+    <div class="modal-body">
+      <p id="modal-desc" style="font-weight:700;color:var(--text);font-size:1rem;margin-bottom:1rem"></p>
+      <p id="modal-fullDesc"></p>
+      <h4 style="font-family:var(--font-display);font-weight:800;color:var(--text);margin:1.5rem 0 0.5rem;font-size:1rem">Tech Stack Used</h4>
+      <div class="modal-tech" id="modal-tech"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Your Store Could Be Here Next</h2>
+  <p>We're selective about the projects we take on — because we commit 100% to every client. Let's talk about yours.</p>
+  <a href="contact.html" class="btn-white ripple">Start Your Project</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">ShopifyPro</a>
+      <p>Pakistan's premier Shopify agency. We build stores that sell, apps that scale, and brands that endure.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Store Setup</a></li>
+        <li><a href="services.html">Theme Development</a></li>
+        <li><a href="services.html">App Development</a></li>
+        <li><a href="services.html">CRO</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@shopifypro.agency">hello@shopifypro.agency</a></li>
+        <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+        <li>Lahore, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopifyPro Agency. All rights reserved.</p>
+    <p>Built with love for Shopify merchants worldwide.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

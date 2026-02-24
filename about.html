@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About ShopifyPro Agency — Our story, team, values, and tech stack." />
+  <title>About Us — ShopifyPro Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .timeline{position:relative;max-width:750px;margin:4rem auto 0}
+    .timeline::before{content:"";position:absolute;left:24px;top:0;bottom:0;width:2px;background:var(--gradient)}
+    .timeline-item{display:flex;gap:2rem;margin-bottom:3rem}
+    .timeline-dot{width:50px;height:50px;border-radius:50%;flex-shrink:0;background:var(--gradient);color:white;font-weight:900;font-family:var(--font-display);font-size:0.82rem;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(0,0,0,0.15);z-index:1}
+    .timeline-content{padding-top:10px}
+    .timeline-content h3{font-family:var(--font-display);font-weight:800;color:var(--text);margin-bottom:0.3rem;letter-spacing:-0.02em}
+    .timeline-content p{font-size:0.94rem;color:var(--text-muted);line-height:1.75}
+    .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;margin-top:3rem}
+    .skill-badge{background:var(--gradient-soft);border:1px solid var(--border);border-radius:14px;padding:1rem;text-align:center;transition:all var(--transition);cursor:default}
+    .skill-badge:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--primary)}
+    .skill-icon{font-size:1.8rem;margin-bottom:0.5rem}
+    .skill-name{font-size:0.82rem;font-weight:700;color:var(--text)}
+  </style>
+</head>
+<body class="scheme-1">
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">ShopifyPro</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="inner-hero about-hero">
+  <div class="hero-bg"><div class="hero-blob hero-blob-1" style="opacity:0.18"></div><div class="hero-blob hero-blob-2" style="opacity:0.18"></div></div>
+  <div class="about-grid" style="position:relative;z-index:1">
+    <div>
+      <span class="section-tag reveal">Our Story</span>
+      <h1 class="section-title reveal" style="font-size:clamp(2.5rem,5vw,4rem)">We Are the <span>Shopify</span> Specialists</h1>
+      <p class="section-subtitle reveal" style="margin-top:1rem">Founded in 2019 in Lahore, ShopifyPro Agency started with a single mission: to give eCommerce brands a competitive edge through exceptional Shopify development.</p>
+      <p class="section-subtitle reveal" style="margin-top:1rem">Five years later, we've grown into a full-service Shopify agency with 30+ experts across development, design, and strategy — having delivered 150+ projects across 40+ countries.</p>
+      <a href="contact.html" class="btn-primary ripple reveal" style="margin-top:2rem;display:inline-block">Work With Us</a>
+    </div>
+    <div class="about-visual reveal-right">
+      <div class="about-main-img">🏢</div>
+      <div class="about-badge">
+        <div class="about-badge-num">5+</div>
+        <div class="about-badge-label">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section style="background:var(--bg-alt)">
+  <div class="text-center">
+    <span class="section-tag reveal">By the Numbers</span>
+    <h2 class="section-title reveal">Our <span>Impact</span> in Numbers</h2>
+  </div>
+  <div class="features-grid stagger" style="margin-top:4rem">
+    <div class="feature-card reveal" style="text-align:center">
+      <div class="feature-icon" style="margin:0 auto 1rem">🏪</div>
+      <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.03em"><span class="counter" data-target="150" data-suffix="+">0+</span></div>
+      <h3 style="margin-top:0.5rem">Stores Built</h3>
+      <p>Shopify stores launched across beauty, fashion, tech, food and more.</p>
+    </div>
+    <div class="feature-card reveal" style="text-align:center">
+      <div class="feature-icon" style="margin:0 auto 1rem">🌍</div>
+      <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.03em"><span class="counter" data-target="40" data-suffix="+">0+</span></div>
+      <h3 style="margin-top:0.5rem">Countries Served</h3>
+      <p>Global clients from the US, UK, UAE, Australia, Canada, and beyond.</p>
+    </div>
+    <div class="feature-card reveal" style="text-align:center">
+      <div class="feature-icon" style="margin:0 auto 1rem">👥</div>
+      <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.03em"><span class="counter" data-target="30" data-suffix="+">0+</span></div>
+      <h3 style="margin-top:0.5rem">Team Members</h3>
+      <p>Dedicated developers, designers, strategists, and project managers.</p>
+    </div>
+    <div class="feature-card reveal" style="text-align:center">
+      <div class="feature-icon" style="margin:0 auto 1rem">⭐</div>
+      <div style="font-family:var(--font-display);font-size:3rem;font-weight:900;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.03em"><span class="counter" data-target="98" data-suffix="%">0%</span></div>
+      <h3 style="margin-top:0.5rem">Client Satisfaction</h3>
+      <p>We don't just deliver — we delight. 98% of clients recommend us.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section>
+  <div class="text-center">
+    <span class="section-tag reveal">Journey</span>
+    <h2 class="section-title reveal">Our <span>Story</span> So Far</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal"><div class="timeline-dot">2019</div><div class="timeline-content"><h3>The Beginning</h3><p>Two developers and a designer started ShopifyPro from a small Lahore office. Our first client was a local clothing brand. We shipped their store in 3 weeks — and tripled their online revenue in 30 days.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-dot">2020</div><div class="timeline-content"><h3>Going Global</h3><p>The pandemic accelerated eCommerce globally. We scaled fast — building 30+ stores in one year for brands across the US, UK, and UAE. Hired our first 10 dedicated Shopify developers.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-dot">2021</div><div class="timeline-content"><h3>App Development Launch</h3><p>Expanded into Shopify app development after repeatedly hearing "the app store doesn't have what I need." Built our first public app — a custom loyalty system that gained 500 installs in its first month.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-dot">2022</div><div class="timeline-content"><h3>Shopify Partner Status</h3><p>Achieved Shopify Partner status. Reached 80+ stores delivered. Launched our migration service after helping 3 brands escape Magento. Grew the team to 20+ specialists.</p></div></div>
+    <div class="timeline-item reveal"><div class="timeline-dot">2024</div><div class="timeline-content"><h3>150+ Projects and Growing</h3><p>150+ projects completed. $12M+ in client revenue generated. 30+ team members. Offices in Lahore, with remote teams across Asia and Europe.</p></div></div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section style="background:var(--bg-alt)">
+  <div class="text-center">
+    <span class="section-tag reveal">The People</span>
+    <h2 class="section-title reveal">Meet the <span>Team</span></h2>
+    <p class="section-subtitle reveal">The humans behind every pixel, every line of code, and every successful launch.</p>
+  </div>
+  <div class="team-grid stagger">
+    <div class="team-card reveal"><div class="team-img">👨‍💻</div><div class="team-info"><h3>Ali Hassan</h3><span>Founder &amp; CEO</span><p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">6+ years in Shopify. Built 80+ stores personally. Loves clean code and faster checkouts.</p></div></div>
+    <div class="team-card reveal"><div class="team-img">👩‍🎨</div><div class="team-info"><h3>Zara Khan</h3><span>Head of Design</span><p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">Award-winning UI/UX designer. Every pixel she touches converts better.</p></div></div>
+    <div class="team-card reveal"><div class="team-img">👨‍🔧</div><div class="team-info"><h3>Usman Malik</h3><span>Lead App Developer</span><p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">Full-stack Shopify app architect. Has shipped 15+ public and private Shopify apps.</p></div></div>
+    <div class="team-card reveal"><div class="team-img">👩‍💻</div><div class="team-info"><h3>Sara Ahmed</h3><span>CRO Strategist</span><p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem">Data obsessed. Has generated $5M+ in additional revenue through conversion optimization.</p></div></div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section>
+  <div class="text-center">
+    <span class="section-tag reveal">What Drives Us</span>
+    <h2 class="section-title reveal">Our Core <span>Values</span></h2>
+  </div>
+  <div class="values-grid stagger">
+    <div class="value-card reveal"><div class="value-icon">🎯</div><h3>Results First</h3><p>We measure our work by your revenue — not lines of code. Every decision is driven by what will perform best for your business.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🏗️</div><h3>Engineering Excellence</h3><p>Clean, documented, maintainable code. We build to last — not to impress in the short term.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🤝</div><h3>Radical Transparency</h3><p>No hidden fees, no scope creep surprises. We communicate early, often, and honestly — even when it's uncomfortable.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🚀</div><h3>Always Improving</h3><p>The eCommerce landscape evolves daily. So do we — constantly learning, testing, and refining our methods.</p></div>
+    <div class="value-card reveal"><div class="value-icon">❤️</div><h3>Client Partnership</h3><p>We don't see clients as transactions. We invest in understanding your business as deeply as you do.</p></div>
+    <div class="value-card reveal"><div class="value-icon">🌍</div><h3>Global Mindset</h3><p>Serving clients in 40+ countries has made us culturally adaptable and globally competitive in our expertise.</p></div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section style="background:var(--bg-alt)">
+  <div class="text-center">
+    <span class="section-tag reveal">Tools and Tech</span>
+    <h2 class="section-title reveal">Our <span>Tech Stack</span></h2>
+  </div>
+  <div class="skills-grid stagger">
+    <div class="skill-badge reveal"><div class="skill-icon">🛍️</div><div class="skill-name">Shopify Liquid</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">⚛️</div><div class="skill-name">React.js</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🟢</div><div class="skill-name">Node.js</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🔷</div><div class="skill-name">GraphQL</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🎨</div><div class="skill-name">Figma</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">💳</div><div class="skill-name">Stripe API</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">📊</div><div class="skill-name">Google Analytics</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🔥</div><div class="skill-name">Hotjar</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">⚡</div><div class="skill-name">Lighthouse CI</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🐘</div><div class="skill-name">PostgreSQL</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">☁️</div><div class="skill-name">AWS / Heroku</div></div>
+    <div class="skill-badge reveal"><div class="skill-icon">🔧</div><div class="skill-name">Shopify CLI</div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Ready to Work With the Best?</h2>
+  <p>Our calendar fills up fast. Secure your project slot and let's build something extraordinary together.</p>
+  <a href="contact.html" class="btn-white ripple">Get In Touch Today</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">ShopifyPro</a>
+      <p>Pakistan's premier Shopify agency. We build stores that sell, apps that scale, and brands that endure.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Store Setup</a></li>
+        <li><a href="services.html">Theme Development</a></li>
+        <li><a href="services.html">App Development</a></li>
+        <li><a href="services.html">CRO</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@shopifypro.agency">hello@shopifypro.agency</a></li>
+        <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+        <li>Lahore, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopifyPro Agency. All rights reserved.</p>
+    <p>Built with love for Shopify merchants worldwide.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

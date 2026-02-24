@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShopifyPro Agency Services — Store Setup, Custom Themes, App Development, Speed Optimization, CRO, Migration." />
+  <title>Services — ShopifyPro Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .service-detail-card {
+      background:var(--card-bg);border:1px solid var(--border);border-radius:22px;padding:3rem;
+      margin-bottom:1.5rem;transition:all var(--transition);
+      display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start;
+    }
+    .service-detail-card:hover{box-shadow:0 20px 60px rgba(0,0,0,0.1);border-color:var(--primary);transform:translateX(6px)}
+    .service-detail-left{text-align:center;min-width:110px}
+    .service-detail-icon{width:90px;height:90px;border-radius:24px;background:var(--gradient);display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 1rem;box-shadow:0 8px 28px rgba(0,0,0,0.15)}
+    .service-number{font-family:var(--font-display);font-size:0.8rem;font-weight:700;color:var(--text-muted);letter-spacing:0.05em}
+    .service-detail-right h2{font-family:var(--font-display);font-size:1.7rem;font-weight:900;letter-spacing:-0.02em;color:var(--text);margin-bottom:0.4rem}
+    .service-detail-right .badge{background:var(--gradient-soft);color:var(--primary);font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:4px 14px;border-radius:50px;border:1px solid var(--border);display:inline-block;margin-bottom:1rem}
+    .service-detail-right p{color:var(--text-muted);line-height:1.8;font-size:0.95rem;margin-bottom:1rem}
+    .feature-pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:1rem}
+    .feature-pill{background:var(--gradient-soft);border:1px solid var(--border);color:var(--text-muted);padding:5px 14px;border-radius:50px;font-size:0.82rem;font-weight:600}
+    .feature-pill::before{content:"✓ ";color:var(--primary);font-weight:800}
+    @media(max-width:768px){.service-detail-card{grid-template-columns:1fr;gap:1.5rem}.service-detail-left{display:flex;align-items:center;gap:1rem;min-width:auto}}
+  </style>
+</head>
+<body class="scheme-1">
+
+<nav class="navbar">
+  <a href="index.html" class="nav-logo">ShopifyPro</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html" class="nav-cta">Get Started</a></li>
+  </ul>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section class="inner-hero">
+  <div class="hero-bg"><div class="hero-blob hero-blob-1" style="opacity:0.18"></div><div class="hero-blob hero-blob-2" style="opacity:0.18"></div></div>
+  <div style="position:relative;z-index:1">
+    <span class="section-tag reveal">What We Offer</span>
+    <h1 class="section-title reveal" style="font-size:clamp(2.5rem,5vw,4rem)">Complete <span>Shopify</span> Services</h1>
+    <p class="section-subtitle reveal">From initial setup to advanced app development — every service is designed to grow your revenue, not just your code count.</p>
+  </div>
+</section>
+
+<!-- ALL 7 SERVICES -->
+<section>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">🏪</div>
+      <div class="service-number">Service 01</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Shopify Store Setup</h2>
+      <span class="badge">Complete Configuration</span>
+      <p>Launching a Shopify store is more than picking a theme — it's architecting a revenue engine. Our store setup service covers everything from the very foundation: domain connection, theme installation, product catalog setup, collections structuring, and full navigation design.</p>
+      <p>We configure every payment gateway available in Pakistan and internationally — including Stripe, PayPal, Shopify Payments, and local options. Shipping zones, rates, weight-based rules, and tax profiles are all configured precisely according to your business model.</p>
+      <p>Our setup follows a conversion-focused structure — strategic placement of CTAs, trust signals, reviews, and checkout optimization. When we hand over your store, it's not just live — it's ready to sell.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">Complete store configuration</span>
+        <span class="feature-pill">Payment gateway integration</span>
+        <span class="feature-pill">Shipping &amp; tax setup</span>
+        <span class="feature-pill">Conversion-focused structure</span>
+        <span class="feature-pill">Domain &amp; SSL setup</span>
+        <span class="feature-pill">Product catalog setup</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">🎨</div>
+      <div class="service-number">Service 02</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Custom Theme Development</h2>
+      <span class="badge">Unique UI/UX Design</span>
+      <p>Your store deserves to stand out, not look like everyone else's Debut or Dawn install. Our custom theme development service creates a fully unique Shopify storefront built from scratch — zero templates, 100% your brand.</p>
+      <p>Using Shopify's Liquid templating engine combined with modern CSS animations, custom JavaScript, and optimized asset pipelines, we engineer themes that are visually stunning and technically exceptional. Every section is custom-built as a Shopify 2.0 section, making your store fully editable from the Theme Editor.</p>
+      <p>Our mobile-first architecture ensures flawless performance across all screen sizes. Brand colors, typography, imagery guidelines — everything is woven into the theme systematically.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">Fully custom UI/UX</span>
+        <span class="feature-pill">Liquid customization</span>
+        <span class="feature-pill">Brand-focused design</span>
+        <span class="feature-pill">Mobile-first architecture</span>
+        <span class="feature-pill">Shopify 2.0 sections</span>
+        <span class="feature-pill">Animation &amp; micro-interactions</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">⚙️</div>
+      <div class="service-number">Service 03</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Shopify App Development</h2>
+      <span class="badge">Private &amp; Public Apps</span>
+      <p>Sometimes the Shopify App Store doesn't have exactly what you need — and that's where we come in. Our Shopify App Development service builds custom private and public apps using the latest Shopify API infrastructure including Admin API, Storefront API, and GraphQL.</p>
+      <p>We build full-stack apps using Node.js, React (Polaris), and Shopify's latest app bridge. Whether you need a subscription billing system, a custom loyalty program, an inventory automation tool, or a complex B2B pricing engine — we architect and develop it end-to-end.</p>
+      <p>For merchants looking to monetize their tools, we also develop public apps ready for Shopify App Store listing — complete with billing management, merchant onboarding, and webhooks for real-time data sync.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">Custom private &amp; public apps</span>
+        <span class="feature-pill">Shopify API integration</span>
+        <span class="feature-pill">Backend + frontend architecture</span>
+        <span class="feature-pill">Subscription app development</span>
+        <span class="feature-pill">Automation &amp; workflow apps</span>
+        <span class="feature-pill">Shopify App Store listing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">🔗</div>
+      <div class="service-number">Service 04</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>App Integration &amp; Plugins</h2>
+      <span class="badge">Third-Party Ecosystems</span>
+      <p>Modern eCommerce doesn't operate in isolation. Your Shopify store needs to talk to your ERP, CRM, email marketing platform, inventory system, and more. We specialize in building seamless integrations between Shopify and your entire business tech stack.</p>
+      <p>Using REST APIs, webhooks, and custom middleware, we connect Shopify with tools like Klaviyo, HubSpot, Salesforce, QuickBooks, NetSuite, Mailchimp, Zoho, and countless others. We also handle complex ERP integrations for enterprise merchants needing real-time inventory and order sync.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">Third-party integrations</span>
+        <span class="feature-pill">CRM &amp; ERP connections</span>
+        <span class="feature-pill">Email marketing sync</span>
+        <span class="feature-pill">Custom feature embedding</span>
+        <span class="feature-pill">Webhook automation</span>
+        <span class="feature-pill">API middleware development</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">🚀</div>
+      <div class="service-number">Service 05</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Speed Optimization</h2>
+      <span class="badge">Core Web Vitals</span>
+      <p>A 1-second delay in page load can cost you 7% in conversions. Speed is not optional — it's revenue. Our speed optimization service takes your sluggish Shopify store and transforms it into a sub-2-second powerhouse.</p>
+      <p>We perform a comprehensive audit of your theme, apps, and media assets, then execute a systematic optimization plan: JavaScript deferral, CSS minification, above-the-fold content prioritization, next-gen image formats (WebP/AVIF), lazy loading, and CDN configuration. We also eliminate render-blocking resources and reduce third-party script footprint.</p>
+      <p>Our clients consistently see PageSpeed scores jump from the 40s to the 85–95 range — translating directly to better SEO rankings and higher conversion rates.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">Core Web Vitals optimization</span>
+        <span class="feature-pill">Code minification &amp; deferral</span>
+        <span class="feature-pill">Lazy loading implementation</span>
+        <span class="feature-pill">Image compression &amp; WebP</span>
+        <span class="feature-pill">CDN optimization</span>
+        <span class="feature-pill">App impact audit</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">📈</div>
+      <div class="service-number">Service 06</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Conversion Rate Optimization</h2>
+      <span class="badge">CRO Strategy</span>
+      <p>Traffic without conversions is just noise. Our CRO service is a structured, data-driven approach to turning more of your existing visitors into paying customers — without spending more on ads.</p>
+      <p>We start with a thorough UX audit using heatmaps, session recordings, and analytics data to identify friction points in your customer journey. From product page optimization to checkout flow simplification, we redesign the experience around what converts.</p>
+      <p>Our process includes A/B testing frameworks, trust signal implementation, urgency and scarcity mechanics, and persuasive copy restructuring. Average improvement: 35–60% lift in conversion rate within 60 days.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">UX audit &amp; heatmaps</span>
+        <span class="feature-pill">Funnel optimization</span>
+        <span class="feature-pill">A/B testing structure</span>
+        <span class="feature-pill">High-converting layouts</span>
+        <span class="feature-pill">Checkout optimization</span>
+        <span class="feature-pill">Trust signal implementation</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="service-detail-card reveal">
+    <div class="service-detail-left">
+      <div class="service-detail-icon">🔄</div>
+      <div class="service-number">Service 07</div>
+    </div>
+    <div class="service-detail-right">
+      <h2>Shopify Migration</h2>
+      <span class="badge">Platform Transfer</span>
+      <p>Moving your store to Shopify? We make the migration smooth, safe, and SEO-preserving. Whether you're coming from WooCommerce, Magento, PrestaShop, BigCommerce, or any other platform, our migration service ensures nothing falls through the cracks.</p>
+      <p>We migrate all products (with variants, metafields, and media), customer data, order history, blog content, and pages with 100% data integrity. Our SEO migration protocol preserves your URL structure, redirects old URLs to new ones, and migrates your meta titles and descriptions — so your Google rankings don't suffer.</p>
+      <p>Post-migration, we run a full verification audit across 50+ checkpoints before handing over your new Shopify store — clean, fast, and ready to grow.</p>
+      <div class="feature-pills">
+        <span class="feature-pill">WooCommerce to Shopify</span>
+        <span class="feature-pill">Magento to Shopify</span>
+        <span class="feature-pill">Full data migration</span>
+        <span class="feature-pill">SEO preservation</span>
+        <span class="feature-pill">URL redirect mapping</span>
+        <span class="feature-pill">Post-migration audit</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Not Sure Which Service You Need?</h2>
+  <p>Book a free 30-minute consultation. We'll review your store and recommend exactly what will move the needle for your business.</p>
+  <a href="contact.html" class="btn-white ripple">Book Free Consultation</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo">ShopifyPro</a>
+      <p>Pakistan's premier Shopify agency. We build stores that sell, apps that scale, and brands that endure.</p>
+      <div class="footer-socials">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Store Setup</a></li>
+        <li><a href="services.html">Theme Development</a></li>
+        <li><a href="services.html">App Development</a></li>
+        <li><a href="services.html">Speed Optimization</a></li>
+        <li><a href="services.html">CRO</a></li>
+        <li><a href="services.html">Migration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:hello@shopifypro.agency">hello@shopifypro.agency</a></li>
+        <li><a href="tel:+923001234567">+92 300 1234567</a></li>
+        <li>Lahore, Pakistan</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 ShopifyPro Agency. All rights reserved.</p>
+    <p>Built with love for Shopify merchants worldwide.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
